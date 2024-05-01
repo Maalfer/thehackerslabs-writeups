@@ -1,4 +1,4 @@
-Hacemos el escaneo de nmap:
+Hacemos el escaneo de nmap donde vemos el puerto 80 y 22 abiertos:
 
 ![image](https://github.com/Maalfer/thehackerslabs-writeups/assets/96432001/458a2103-af71-4417-9b19-46c6c37e0641)
 
@@ -12,9 +12,13 @@ Viendo el código fuente vemos el usuario melanie:
 
 Por lo que hacemos fuerza bruta al puerto 22 con hydra:
 
-Estamos dentro:
+![image](https://github.com/Maalfer/thehackerslabs-writeups/assets/96432001/5973cd5d-b0f7-4ad5-8c42-aae5c82d7516)
 
-Y vemos un archivo que genera claves id_rsa:
+Accedemos por SSH con las credenciales obtenidas y estamos dentro:
+
+![image](https://github.com/Maalfer/thehackerslabs-writeups/assets/96432001/fff6cf5b-2d47-49bb-8829-249357c7c000)
+
+Una vez dentro, ejecutando el comando sudo -l, vemos un archivo que genera claves id_rsa:
 
 ![image](https://github.com/Maalfer/thehackerslabs-writeups/assets/96432001/3eaa0bb7-101a-45d9-a924-382ef0c0ec26)
 
